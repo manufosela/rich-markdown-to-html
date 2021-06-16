@@ -58,3 +58,27 @@ Use heading titles, strong, italic and strong-italic text to add color
 
 ### imagen |_..._|
 \|_([\/\w\.]*)_\|(.*?)
+
+
+## DEMO
+
+```
+import pkg from 'rich-markdown-to-html';
+const { parseRMD} = pkg;
+
+const result = parseRMD(`
+  **|orange|hola** pepito lopez
+  *Cómo estás*
+  ***negrita y cursiva***
+  # |rgba(255, 255, 0, 0.5)|titulo 1
+  ## titulo 2
+  ### titulo 3
+  #### titulo 4
+  ##### |blue|titulo 5
+  ###### titulo 6
+  **|2BD||_/img/linea.png_|img negrita**
+  otro texto sin importancia pero esta ··palabra·· va **|_https://png.pngtree.com/element_our/20200609/ourmid/pngtree-purple-underline-image_2231184.jpg_|subrayada**
+  No se que mas poner
+`);
+console.log(result);
+```
