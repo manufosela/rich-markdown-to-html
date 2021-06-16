@@ -1,0 +1,20 @@
+{
+  "name": "rich-markdown-to-html",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "./lib/richmd2html.cjs",
+  "bin": {
+    "linuxt": "./bin/index.cjs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ['markdown', 'html'],
+  "author": "manufosela",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">= 7.0.0"
+  }
+}
